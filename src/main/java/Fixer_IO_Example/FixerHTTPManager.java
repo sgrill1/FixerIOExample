@@ -15,7 +15,7 @@ public class FixerHTTPManager {
 
     public FixerHTTPManager(){
         KeyReader keyReader = new KeyReader ();
-        api_key = "access_key" + keyReader.getApi_key ();
+        api_key = "access_key=" + keyReader.getApi_key ();
         base_url = "http://data.fixer.io/api"; //abstraction :)
     }
     public void setLatestRates(){
@@ -36,6 +36,3 @@ public class FixerHTTPManager {
     }
 }
 
-//         FixerHTTPManager fixerHTTPManager = new FixerHTTPManager ();
-//        fixerHTTPManager.setLatestRates();
-//        System.out.println (fixerHTTPManager.getLatestRates ());
